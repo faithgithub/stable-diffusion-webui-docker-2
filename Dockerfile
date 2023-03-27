@@ -66,6 +66,6 @@ RUN cd stable-diffusion-webui && python launch.py --skip-torch-cuda-test
 
 ADD --chown=user https://huggingface.co/ckpt/sd15/resolve/main/v1-5-pruned-emaonly.ckpt /content/stable-diffusion-webui/models/Stable-diffusion/v1-5-pruned-emaonly.ckpt
 
-EXPOSE 900
+EXPOSE 9000
 
 CMD cd /content/stable-diffusion-webui && python webui.py --xformers --listen --enable-insecure-extension-access --gradio-queue --port 9000
