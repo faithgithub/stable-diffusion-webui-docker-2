@@ -69,4 +69,4 @@ RUN cd stable-diffusion-webui && python launch.py --skip-torch-cuda-test
 EXPOSE 9000
 ENV CLI_ARGS=""
 
-CMD cd /content/stable-diffusion-webui && python webui.py --xformers --listen --enable-insecure-extension-access --gradio-queue --port 9000 ${CLI_ARGS}
+CMD cd /content/stable-diffusion-webui && python webui.py --listen --enable-insecure-extension-access --gradio-queue --port 9000 ${CLI_ARGS}
